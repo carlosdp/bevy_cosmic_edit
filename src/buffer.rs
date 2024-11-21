@@ -115,7 +115,7 @@ impl<'s, 'r> CosmicBuffer {
         I: IntoIterator<Item = (&'s str, Attrs<'r>)>,
     {
         self.0
-            .set_rich_text(font_system, spans, attrs, Shaping::Advanced);
+            .set_rich_text(font_system, spans, attrs, Shaping::Advanced, None);
         self
     }
 
@@ -144,7 +144,7 @@ impl<'s, 'r> CosmicBuffer {
         I: IntoIterator<Item = (&'s str, Attrs<'r>)>,
     {
         self.0
-            .set_rich_text(font_system, spans, attrs, Shaping::Advanced);
+            .set_rich_text(font_system, spans, attrs, Shaping::Advanced, None);
         self.set_redraw(true);
         self
     }
