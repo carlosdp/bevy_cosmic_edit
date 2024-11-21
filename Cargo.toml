@@ -33,7 +33,7 @@ bevy = { version = "0.15", default-features = false, features = [
     "x11",
     "webgl2",
 ] }
-cosmic-text = { version = "0.12.0" }
+cosmic-text = { git = "https://github.com/carlosdp/cosmic-text", branch = "single-line-wrap-scroll" }
 # TODO: move crossbeam to wasm32, once input.rs has separate wasm copy/paste fn
 unicode-segmentation = { version = "1.11.0" }
 
